@@ -1,0 +1,8 @@
+---
+- name: Using Variables
+  hosts: web
+  become: yes
+  tasks:
+  - name: Printing Message
+    ansible.builtin.debug:
+      msg: "Hellow Siva"
