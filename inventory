@@ -1,0 +1,16 @@
+[web]
+roboshop-us-dev-web-nginx-o1.cloudevops.cloud
+roboshop-us-dev-web-nginx-o2.cloudevops.cloud
+roboshop-us-dev-web-nginx-o3.cloudevops.cloud
+
+[mongodb]
+roboshop-us-dev-db-mongodb-o1.cloudevops.cloud
+roboshop-uk-dev-db-mongodb-o2.cloudevops.cloud
+
+[mysql]
+roboshop-ap-prod-db-mysql-o1.cloudevops.cloud
+roboshop-ap-prod-db-mysql-o2.cloudevops.cloud
+
+[db:children]
+mongodb
+mysql
