@@ -12,7 +12,8 @@
   #     msg: "Hellow Siva"
   - name: Printing username
     ansible.builtin.debug:
-      msg: "Hellow {{ user-name }}"
+      msg: "Hellow {{user-name}}"
+      
   - name: Printing Course
     ansible.builtin.debug:
       msg: "You are learning {{course}}"
