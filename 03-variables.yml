@@ -4,7 +4,7 @@
   # become: yes
   # Declaring variables In Play Level
   vars:
-    user-name: siva
+    username: siva
     course: DevOps
   tasks:
   # - name: Printing Message
@@ -12,8 +12,8 @@
   #     msg: "Hellow Siva"
   - name: Printing username
     ansible.builtin.debug:
-      msg: "Hellow {{user-name}}"
-      
+      msg: "Hellow {{username}}"
+
   - name: Printing Course
     ansible.builtin.debug:
       msg: "You are learning {{course}}"
