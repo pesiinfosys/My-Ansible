@@ -3,10 +3,10 @@
   hosts: localhost
   tasks:
   - name: Configuring packages
-    ansible.builtin.yum:
     become: true
-      name: {{ item.name }}
-      state: {{ item.action }}
+    ansible.builtin.yum:
+      name: "{{ item.name }}"
+      state: "{{ item.action }}"
     loop:
     - { name: "tree", action: "absent" }
     - { name: "nginx", action: "present" }
