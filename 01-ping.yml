@@ -1,5 +1,5 @@
 ---
-- name: To check server connectivity
+- name: To check The server connectivity
   hosts: web
   tasks:
   - name: Ping The Hosts
