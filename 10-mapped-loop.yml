@@ -1,0 +1,14 @@
+---
+- name: Checking mapped Loop
+  hosts: localhost
+  tasks:
+  - name: Configuring packages
+    ansible.builtin.yum:
+    become: true
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - { name: "tree", action: "absent" }
+    - { name: "nginx", action: "present" }
+    - { name: "httpd", action: "absent" }
+    - { name: "maven", action: "present" }
