@@ -16,6 +16,10 @@
       houses: "2"
     ansible.builtin.debug:
       msg: "Siva increased property to money {{money}} lamd {{land}} houses {{houses}}"
+ 
+  - name: checking variable updated or not
+    ansible.builtin.debug:
+      msg: "The value of land {{land}}"
 
   - name: Check Task-Task variables
     ansible.builtin.debug:
