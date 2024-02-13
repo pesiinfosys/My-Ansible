@@ -8,6 +8,7 @@
   - name: Printing Parent/paly level variables
     ansible.builtin.debug:
       msg: "U got Money of {{money}} and Land of {{land}}"
+
   - name: Printing children/Task and parent/play Variables
     vars: # Declaring Variables at task level
       money: "2 cr"
@@ -15,3 +16,7 @@
       houses: "2"
     ansible.builtin.debug:
       msg: "Siva increased property to money {{money}} lamd {{land}} houses {{houses}}"
+
+  - name: Check Task-Task variables
+    ansible.builtin.debug:
+      msg: "Siva Has Houses {{houses}}"
