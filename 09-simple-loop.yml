@@ -1,0 +1,12 @@
+---
+- name: Simple Loop
+  hosts: localhost
+  tasks:
+  - name: Installing packages
+    become: true
+    ansible.builtin.yum:
+      name: {{item}}
+      state: installed
+    loop:
+    - tree
+    - httpd
