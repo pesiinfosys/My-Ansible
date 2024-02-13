@@ -1,0 +1,9 @@
+---
+- name: Variable From File
+  hosts: localhost
+  vars_files:
+  - ./variables-file.yml
+  tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "Employee {{NAME}} Working In {{COMPANY}} His Specilization In {{DOMAIN}}"
