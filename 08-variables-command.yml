@@ -1,0 +1,7 @@
+---
+- name: Taking variables From Command or as arguments # this is done by using -e in command line
+  hosts: localhost
+  tasks:
+  - name: Printing Argument/command variables
+    ansible.builtin.debug:
+      msg: "my name is {{NAME}}"
