@@ -1,0 +1,7 @@
+---
+- name: Taking Variables From Inventory
+  hosts: localhost
+  tasks:
+  - name: Printing Inventory Variables
+    ansible.builtin.debug:
+      msg: "My Group Name is {{name}}"
