@@ -1,3 +1,6 @@
 [web]
 172.31.85.227
 
+[localhost:vars]
+name="SRI"
+
