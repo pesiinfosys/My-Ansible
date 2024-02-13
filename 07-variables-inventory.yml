@@ -1,6 +1,6 @@
 ---
 - name: Taking Variables From Inventory
-  hosts: localhost
+  hosts: web
   tasks:
   - name: Printing Inventory Variables
     ansible.builtin.debug:
